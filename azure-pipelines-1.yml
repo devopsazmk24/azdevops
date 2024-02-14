@@ -1,0 +1,12 @@
+trigger:
+- manual
+
+pool:
+ vmimages: ubuntu-latest
+
+stages:
+  - stage: A
+    jobs:
+      - job: ajob
+        steps:
+          - script: echo hello world
